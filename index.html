@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="html, js">
+    <meta name="description" content="This is Discription">
+    <title>Document</title>
+    <style>
+        .mastercontainer {
+            width: auto;
+            margin: auto;
+        }
+
+        body {
+            background: #c2c2c2;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .maincontainer {
+            /* border: 4px solid black; */
+            display: flex;
+            position: relative;
+            margin-right: 5px;
+            /* bottom: 150px; */
+        }
+
+        .item {
+            /* border: 2px solid black; */
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #blog-area {
+            width: auto;
+            text-align: Left;
+            /* height: 4444px; */
+            /* background-color: rgb(255, 255, 255); */
+        }
+
+        #element-2 {
+            width: 25%;
+            height: 680px;
+            /* margin: 1em; */
+            /* background-color: rgb(255, 255, 255); */
+            position: sticky;
+            top: 3px;
+        }
+
+        .blogcontainer {
+            display: flex;
+            /* border: 1px solid black; */
+            background-color: white;
+            border-radius: 10px;
+            margin: 0px 5px 20px 5px;
+            /* margin: 1em; */
+            padding: 10px;
+        }
+
+        .image {
+            /* border: 2px solid black; */
+            width: 25%;
+            margin: 3px;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .content {
+            /* border: 2px solid black; */
+            width: 75%;
+            padding: 10px;
+        }
+
+        .button {
+            /* border: 2px solid black; */
+            color: black;
+            background-color: #c2c2c2;
+            border-radius: 20px;
+            padding: 10px;
+            float: right;
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+        }
+
+        .sidebarcontainer {
+            /* display: flex; */
+            background-color: #fff;
+            /* border: 3px solid black; */
+            width: 300px;
+            /* height: 320px; */
+            border-radius: 10px;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* justify-content: space-evenly; */
+            align-items: center;
+            padding: 5px;
+            /* padding: 2px 5px 5px 5px; */
+            /* margin: 0px 0px 20px auto; */
+            /* display:inline-block; */
+            /* flex-flow: row wrap;     This tag is short hand, it is combined tag of flex-direction and flex-wrap*/
+        }
+
+        .sidebarcontainer1 {
+            /* display: flex; */
+            background-color: #fff;
+            /* border: 3px solid black; */
+            width: 300px;
+            height: 280px;
+            border-radius: 10px;
+            margin-top: 10px;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* justify-content: space-evenly; */
+            align-items: center;
+            padding: 5px;
+            /* padding: 2px 5px 5px 5px; */
+            /* display:inline-block; */
+            /* flex-flow: row wrap;     This tag is short hand, it is combined tag of flex-direction and flex-wrap*/
+        }
+
+        .boxitem {
+            background-color: #ffffff;
+            height: 130px;
+            width: 130px;
+            margin: 5px;
+            display: inline-block;
+            /* border: 3px solid black; */
+            border-radius: 10px;
+            /* margin: 5px auto; */
+            padding: 3px;
+        }
+
+        .boxitem1 {
+            background-color: #ffffff;
+            height: 50px;
+            width: 95%;
+            margin: 5px;
+            display: inline-block;
+            /* border: 3px solid black; */
+            border-radius: 10px;
+            /* margin: 5px auto; */
+            padding: 3px;
+        }
+
+        .card {
+            text-align: left;
+            background-image: url(img/bigcardbg.jpeg);
+            border-radius: 10px;
+            display: inline-block;
+            height: 200px;
+            margin: 1rem;
+            position: relative;
+            width: 300px;
+        }
+
+        .card00 {
+            text-align: left;
+            background-image: url(img/smallcardbg.jpg);
+            border-radius: 10px;
+            display: inline-block;
+            height: 130px;
+            margin: 1rem;
+            position: relative;
+            width: 180px;
+        }
+
+        .card0 {
+            background: rgb(233, 233, 233);
+            border: 5px solid #ffffff;
+            /* border-radius: 2px; */
+            display: inline-block;
+            height: auto;
+            margin: 1rem;
+            position: relative;
+            width: auto;
+
+        }
+
+
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+        }
+
+        .card-1:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .cardtext {
+            margin-top: 35%;
+            padding: 1em;
+        }
+
+        .smallcardtext {
+            margin-top: 35%;
+            padding: 1em;
+        }
+
+        .featuredimg {
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 15px;
+            margin: 1em;
+        }
+
+        h3 {
+            /* font-size: 12px; */
+            margin: 0px;
+            padding: 1em;
+        }
+
+        h4 {
+            font-size: 13px;
+            margin: 0%;
+        }
+
+        .font1 {
+            /* text-align: center; */
+            /* vertical-align: center; */
+            text-align: center;
+            margin: 5% 10%;
+            color: black;
+        }
+
+
+        .navbar {
+            background-color: #ffffff;
+            /* background-color: transparent black; */
+            border-radius: 20px;
+            margin: 1em;
+            padding: 5px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin: 0px;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 10px;
+            /* position: relative; */
+        }
+
+        .navbar li:hover {
+            color: #ffffff;
+            background-color: #000000;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .hero {
+            /* border: 4px solid black; */
+            height: 500px;
+            border-radius: 20px;
+            /* background-image: url("img/herobg.jpg"); */
+            background-color: #fff;
+            background-size: cover;
+            /* width: 100%; */
+            height: auto;
+            margin: 1em;
+            padding: 1em;
+        }
+
+        .herobg {
+            width: 100%;
+        }
+
+        .SC1 {
+            background: rgb(233, 232, 232);
+            /* border: 5px solid #ffffff; */
+            margin: 1em;
+            border-radius: 10px;
+            display: inline-block;
+            height: auto;
+            padding: 13px 5px;
+            width: 300px;
+        }
+
+        .SC1-1 {
+            background: #fff;
+            border-radius: 10px;
+            display: inline-block;
+            height: 130px;
+            position: relative;
+            width: 130px;
+            margin: 5px;
+        }
+
+        .SFI {
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+        }
+
+
+        h1 {
+            margin: 0px;
+            bottom: 1px;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            /* background-color: transparent black; */
+            border-radius: 20px;
+            margin: 1em;
+            padding: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="mastercontainer">
+        <header class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Goals</li>
+                <li>Contact</li>
+                <li>Colaboration</li>
+            </ul>
+        </header>
+        <div class="hero">
+            <div class="herobg">
+                <div>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="smallicon">
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="maincontainer">
+            <div class="item" id="blog-area">
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G7.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G4.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G3.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G2.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G5.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G6.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G1.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G8.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G9.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G10.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G11.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G12.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G13.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G7.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G4.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G3.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G2.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G5.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G6.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G1.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G8.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G9.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G10.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G11.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G12.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G13.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+            <div class="item" id="element-2">
+
+                <div class="sidebaritem">
+                    <div class="sidebarcontainer card-1">
+                        <h3>Popular Posts</h3>
+                        <a href="#">
+                            <div class="boxitem card-1">
+                                <img src="img/G1.jpg" alt="" class="featuredimg">
+                                <h4>Gujwar</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem card-1">
+                                <img src="img/G2.jpg" alt="" class="featuredimg">
+                                <h4>Affiliate</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem card-1">
+                                <img src="img/G3.jpg" alt="" class="featuredimg">
+                                <h4>Offers</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem card-1">
+                                <img src="img/G4.jpg" alt="" class="featuredimg">
+                                <h4>YouTube</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="sidebaritem">
+                    <div class="sidebarcontainer1 card-1">
+                        <a href="#">
+                            <div class="boxitem1 card-1">
+                                <h4 class="font1">It was like BigginiShoot</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem1 card-1">
+                                <h4 class="font1">Developement is FUN</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem1 card-1">
+                                <h4 class="font1">Ye Hamari Car Hain</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem1 card-1">
+                                <h4 class="font1">Aur Yaha Hamaru Pwari</h4>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- end of main container -->
+
+
+        <div class="hero">
+            <div class="herobg">
+                <div>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card-1">
+                            <p class="cardtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End of Hero 2 -->
+
+
+        <div class="hero">
+            <div class="herobg">
+                <div class="smallicon">
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="maincontainer">
+            <div class="item" id="blog-area">
+                
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G9.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G10.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G11.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G12.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G13.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G7.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G6.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G1.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G8.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G9.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G10.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G11.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G12.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="blogcontainer card-1">
+                    <div class="image">
+                        <img src="img/G13.jpg" class="image" alt="Sample Image">
+                    </div>
+                    <div class="content">
+                        <h3>This is heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex suscipit pariatur deserunt
+                            expedita sit magni voluptatem cum nostrum eligendi ad, accusantium cumque repellat
+                            excepturi.
+                            Tempore autem dolor nobis veritatis?</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+            <div class="item" id="element-2">
+
+                <div class="sidebaritem">
+                    <div class="sidebarcontainer card-1">
+                        <h3>Popular Posts</h3>
+                        <a href="#">
+                            <div class="boxitem card-1">
+                                <img src="img/G1.jpg" alt="" class="featuredimg">
+                                <h4>Gujwar</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem card-1">
+                                <img src="img/G2.jpg" alt="" class="featuredimg">
+                                <h4>Affiliate</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem card-1">
+                                <img src="img/G3.jpg" alt="" class="featuredimg">
+                                <h4>Offers</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem card-1">
+                                <img src="img/G4.jpg" alt="" class="featuredimg">
+                                <h4>YouTube</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="sidebaritem">
+                    <div class="sidebarcontainer1 card-1">
+                        <a href="#">
+                            <div class="boxitem1 card-1">
+                                <h4 class="font1">It was like BigginiShoot</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem1 card-1">
+                                <h4 class="font1">Developement is FUN</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem1 card-1">
+                                <h4 class="font1">Ye Hamari Car Hain</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="boxitem1 card-1">
+                                <h4 class="font1">Aur Yaha Hamaru Pwari</h4>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- end of main container -->
+
+        <div class="hero">
+            <div class="herobg">
+                <div class="smallicon">
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card00 card-1">
+                            <p class="smallcardtext">Lorem, ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright 2021 Bhavesh Gujwar All Rights Reserved</p>
+        </div>
+
+    </div>  <!-- End of Master Div -->
+</body>
+
+</html>
